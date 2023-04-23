@@ -37,13 +37,13 @@ function Testimonial (props) {
 
 
   return (
-    <div className='w-[50%] mx-auto text-center items-end bg-slate-600 rounded-xl shadow-xl max-[1024px]:w-[100%]'>
+    <div className='w-[50%] mx-auto text-center items-end bg-slate-300 rounded-xl shadow-xl max-[1024px]:w-[100%]'>
 
         <div className=''>
             <Card profile={profiles[index]}></Card>
         </div>
 
-        <div className='flex flex-col gap-6 mx-auto w-[50%]'>
+        <div className='flex flex-col gap-6 max-[550px]:gap-4 mx-auto w-[50%]'>
             <div className='flex flex-row justify-around'>
 
                 <button onClick={leftHandler}> <BsFillCaretLeftFill></BsFillCaretLeftFill> </button>
@@ -51,9 +51,9 @@ function Testimonial (props) {
 
             </div>
 
-            <div className='bg-blue-300 hover:bg-blue-600 hover:text-white font-semibold w-[50%] ml-24 max-[760px]:ml-16 mb-5 rounded-2xl  hover:shadow-2xl'> 
+            <div className='bg-blue-300 hover:bg-blue-600 hover:text-white font-semibold w-[50%]  max-[550px]:w-[70%] ml-24 max-[760px]:ml-16 max-[550px]:ml-8 mb-5 rounded-2xl hover:shadow-2xl max-[550px]:text-sm transition-all duration-200'> 
                 
-            <button  onClick={randomHandler}>Random Show</button>
+            <button onClick={randomHandler}>Random Show</button>
             </div>
         </div>
         
